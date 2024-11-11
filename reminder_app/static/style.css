@@ -1,0 +1,165 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for centering content */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.form-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+.schedule-container {
+    margin-top: 20px;
+}
+
+.reminder-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.reminder-table th,
+.reminder-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reminder-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.reminder-table tr:hover {
+    background-color: #f1f1f1;
+}
+/* Banner Styling */
+.banner {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+}
+
+/* Optional icon styling */
+.banner-icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+/* Custom Notification Styling */
+.custom-notification {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    z-index: 1000;
+    animation: slide-in 0.5s ease forwards;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.notification-close {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: -10px -10px 10px 0;
+}
+
+.custom-notification h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.custom-notification p {
+    margin-top: 10px;
+}
+
+/* Animation for the notification */
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
